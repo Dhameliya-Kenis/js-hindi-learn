@@ -5,11 +5,11 @@ NewUser.id = "123abc"
 NewUser.name = "KenisD"
 NewUser.isLoggedIn = false
 
-console.log(NewUser);
-console.log(Object.keys(NewUser)); // will use in development
-console.log(Object.values(NewUser));
-console.log(Object.entries(NewUser));
-console.log(NewUser.hasOwnProperty('name'));
+// console.log(NewUser);
+// console.log(Object.keys(NewUser)); // will use in development
+// console.log(Object.values(NewUser));
+// console.log(Object.entries(NewUser));
+// console.log(NewUser.hasOwnProperty('name'));
 
 
 const regularUser = {
@@ -37,12 +37,12 @@ const obj2 = {3:"a", 4:"b"}
 
 //solution of above problem
 const obj3 = Object.assign({}, obj1, obj2) // it will add obj1 and obj2 in an empty object // it won't modify the obj1
-console.log(obj3);
-console.log(obj1);
+// console.log(obj3);
+// console.log(obj1);
 
 // another way to merge objects
 const obj4 = {...obj1, ...obj2}
-console.log(obj4);
+// console.log(obj4);
 
 
 //--------------
@@ -61,4 +61,19 @@ const ArrObj = [
     }
 ]
 
-console.log(ArrObj[1].name);
+//console.log(ArrObj[1].name);
+
+// destructure-----
+
+const course = {
+    id: "abc",
+    email: "test@gmail.com",
+    courseInstructor: "kenis"
+}
+
+const {courseInstructor} = course
+
+console.log(courseInstructor);
+
+const {courseInstructor: CoIns} = course
+console.log(CoIns);
