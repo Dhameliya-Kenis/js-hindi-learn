@@ -30,3 +30,24 @@ function loginUserMessage(username = "BotUser"){
 
 console.log(loginUserMessage("kenis"))
 console.log(loginUserMessage())
+
+
+function calculataCartPrice(...num1){ // ...num1 will consider all the passed arguments
+    return num1
+} 
+
+console.log(calculataCartPrice(200,500,100));
+
+
+const User = {
+    username : "kenisd",
+    price : 599
+}
+
+
+function handleObject(anyObject)
+{
+    console.log(`UserName is ${anyObject.username} and Price is ${anyObject.price}`);
+}
+
+handleObject(User)
